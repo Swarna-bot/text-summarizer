@@ -9,6 +9,6 @@ def summarize(prompt):
             prompt=augmented_prompt,
             max_tokens=1000,
             temperature=0.5,
-        )["choices"[0]["text"]]
+        )["choices"][0]["text"]
     except:
         st.write('There was an error=(')
